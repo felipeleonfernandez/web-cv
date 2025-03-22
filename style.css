@@ -102,7 +102,7 @@ footer {
 
 .imagenes-experiencia {
     display: grid;
-    grid-auto-flow: row; /* Organiza los elementos en filas */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-gap: 10px; /* Espacio entre los elementos */
     gap: 20px; /* Espaciado uniforme */
     justify-content: center; /* Centra los elementos */
