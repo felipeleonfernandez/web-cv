@@ -92,43 +92,21 @@ footer {
 
 .imagenes-tecnologias {
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes bajen en pantallas pequeñas */
-    justify-content: center;
-    gap: 20px; /* Espaciado uniforme */
+    flex-wrap: wrap; /* Permite que las imágenes bajen a la siguiente línea */
+    justify-content: center; /* Centra las imágenes */
+    gap: 20px; /* Espacio entre imágenes */
     margin-top: 10px;
-}
-
-/* Ajusta todas las imágenes al mismo tamaño */
-.imagenes-tecnologias img {
-    width: 100px;  /* Ancho fijo */
-    height: 100px; /* Alto fijo */
-    object-fit: contain; /* Mantiene la proporción sin recortar */
-    background: white; /* Fondo para mejor contraste */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Pequeña sombra */
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Efecto hover para resaltar */
-.imagenes-tecnologias img:hover {
-    transform: scale(1.1);
-}
-
-.imagenes-tecnologias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
+    max-width: 800px; /* Evita que las imágenes se expandan demasiado */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Contenedor de cada tecnología */
 .tecnologia {
     display: flex;
-    flex-direction: column; /* Apila imagen y texto */
-    align-items: center; /* Centra el contenido */
-    width: 120px; /* Tamaño fijo para mantener alineado */
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;
+    width: 120px; /* Tamaño fijo para evitar saltos */
     text-align: center;
 }
 
@@ -157,10 +135,22 @@ footer {
     color: #333;
 }
 
-
-/* Diseño responsivo: en móviles, las secciones se apilan */
+/* Diseño responsive para móviles */
 @media (max-width: 768px) {
-    .contenedor-cert-tec {
-        flex-direction: column;
+    .imagenes-tecnologias {
+        max-width: 100%; /* Se ajusta al ancho del dispositivo */
+    }
+
+    .tecnologia {
+        width: 90px; /* Reduce tamaño en pantallas pequeñas */
+    }
+
+    .tecnologia img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tecnologia p {
+        font-size: 12px;
     }
 }
