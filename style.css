@@ -103,7 +103,7 @@ footer {
 .imagenes-experiencia {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-gap: 10px; /* Espacio entre los elementos */
+    grid-gap: 2px; /* Espacio entre los elementos */
     gap: 20px; /* Espaciado uniforme */
     justify-content: center; /* Centra los elementos */
     align-items: center; /* Alinea verticalmente */
