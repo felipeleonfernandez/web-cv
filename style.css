@@ -91,22 +91,19 @@ footer {
 }
 
 .imagenes-tecnologias {
-    display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes bajen a la siguiente línea */
-    justify-content: center; /* Centra las imágenes */
-    gap: 20px; /* Espacio entre imágenes */
-    margin-top: 10px;
-    max-width: 800px; /* Evita que las imágenes se expandan demasiado */
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* 3-4 imágenes por fila */
+    gap: 20px; /* Espaciado entre imágenes */
+    justify-content: center; /* Centra el contenido */
+    max-width: 800px; /* Máximo ancho */
+    margin: auto; /* Centra el contenedor */
 }
 
 /* Contenedor de cada tecnología */
 .tecnologia {
     display: flex;
-    flex-direction: column; /* Imagen arriba, texto abajo */
+    flex-direction: column; /* Apila imagen y texto */
     align-items: center;
-    width: 120px; /* Tamaño fijo para evitar saltos */
     text-align: center;
 }
 
@@ -138,19 +135,6 @@ footer {
 /* Diseño responsive para móviles */
 @media (max-width: 768px) {
     .imagenes-tecnologias {
-        max-width: 100%; /* Se ajusta al ancho del dispositivo */
-    }
-
-    .tecnologia {
-        width: 90px; /* Reduce tamaño en pantallas pequeñas */
-    }
-
-    .tecnologia img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .tecnologia p {
-        font-size: 12px;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Menos imágenes por fila */
     }
 }
