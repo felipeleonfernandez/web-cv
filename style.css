@@ -89,22 +89,27 @@ footer {
     text-align: center;
 }
 
-/* Sección de imágenes de tecnologías */
 .imagenes-tecnologias {
     display: flex;
     flex-wrap: wrap; /* Permite que las imágenes bajen en pantallas pequeñas */
     justify-content: center;
-    gap: 15px;
+    gap: 20px; /* Espaciado uniforme */
     margin-top: 10px;
 }
 
+/* Ajusta todas las imágenes al mismo tamaño */
 .imagenes-tecnologias img {
-    width: 80px;
-    height: auto;
+    width: 100px;  /* Ancho fijo */
+    height: 100px; /* Alto fijo */
+    object-fit: contain; /* Mantiene la proporción sin recortar */
+    background: white; /* Fondo para mejor contraste */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Pequeña sombra */
     transition: transform 0.3s ease-in-out;
 }
 
-/* Efecto hover */
+/* Efecto hover para resaltar */
 .imagenes-tecnologias img:hover {
     transform: scale(1.1);
 }
