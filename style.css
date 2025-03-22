@@ -81,7 +81,7 @@ footer {
 }
 
 /* Ajusta el tamaño de las secciones */
-.certificaciones, .tecnologias {
+.certificaciones, .tecnologias, .perfil, .contacto {
     flex: 1; /* Ambas ocupan el mismo espacio */
     background: white;
     padding: 20px;
