@@ -43,3 +43,15 @@ footer {
     margin: 0 auto 15px;
     border: 3px solid white;
 }
+
+.contacto p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el icono y el texto */
+    font-size: 18px;
+}
+
+.contacto i {
+    color: #0073e6; /* Color azul para los iconos */
+    font-size: 20px;
+}
