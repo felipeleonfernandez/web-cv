@@ -107,7 +107,7 @@ footer {
     /* gap: 20px; /* Espaciado uniforme */
     justify-content: center; /* Centra los elementos */
     align-items: center; /* Alinea verticalmente */
-    max-width: 1200px; /* Ajuste de ancho */
+    /*max-width: 1200px; /* Ajuste de ancho */
     margin: 0 auto; /* Centra la sección */
 }
 
