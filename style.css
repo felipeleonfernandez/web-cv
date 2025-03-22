@@ -36,9 +36,11 @@ footer {
 }
 
 .contenedor {
-    display: flex;
-    gap: 20px; /* Espacio entre las secciones */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 20px;
 }
+
 
 .experiencia, .educacion {
     flex: 1; /* Ambas ocupan el mismo espacio */
