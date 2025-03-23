@@ -41,31 +41,44 @@ footer {
     align-items: flex-start; /* Alinea los elementos en la parte superior */
 }
 
+/* Asegura que el div no desborde en móviles */
 .experiencia.actual {
-    background: #2563eb; /* Azul destacado */
-    color: white;
+    max-width: 100%;  /* Se adapta al ancho del contenedor */
+    width: 90%;       /* Evita que ocupe el 100% y genere desbordes */
+    text-align: center;
     padding: 15px;
-    border-radius: 10px;
-    text-align: center;
+    box-sizing: border-box; /* Evita que padding afecte el tamaño total */
 }
 
+/* Imagen del puesto actual un poco más grande */
 .experiencia.actual img {
-    width: 100px; /* Imagen del puesto actual un poco más grande */
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
-.experiencia.actual p {
-    font-size: 16px;
-    font-weight: bold;
-}
+/* Ajuste responsivo en pantallas pequeñas */
+@media (max-width: 600px) {
+    .experiencia.actual {
+        width: 100%; /* En móvil ocupa todo el ancho disponible */
+        padding: 10px;
+    }
 
-/*.historico-experiencia {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    text-align: center;
-}*/
+    .historico-experiencia {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .experiencia {
+        flex-direction: column; /* En móviles, texto e imagen en columna */
+        text-align: center;
+    }
+
+    .experiencia img {
+        width: 60px; /* Ajuste para pantallas muy pequeñas */
+        height: 60px;
+    }
+}
 
 .historico-experiencia {
     display: flex;
@@ -83,18 +96,9 @@ footer {
     max-width: 400px; /* Limita el ancho para evitar que se vean gigantes */
 }
 
-
-/*.historico-experiencia {
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}*/
-
 .experiencia img {
-    width: 80px;  /* Reduce el tamaño de la imagen */
-    height: 80px; 
+    width: 70px; /* Reducimos aún más en móvil */
+    height: 70px;
     object-fit: contain;
     background: white;
     padding: 5px;
