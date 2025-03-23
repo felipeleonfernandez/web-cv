@@ -62,7 +62,7 @@ footer {
 .experiencia.actual.titulo {
     background: white;
     color: black;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Efecto sombra */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Efecto sombra */
 }
 
 .experiencia.actual .descripcion {
