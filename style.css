@@ -41,13 +41,14 @@ footer {
     align-items: flex-start; /* Alinea los elementos en la parte superior */
 }
 
+/* Destacar el puesto actual */
 .experiencia.actual {
     background: #2563eb;
     color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Reduce el espacio entre elementos */
-    align-items: center;
+    width: 90%;  /* Ocupa casi todo el ancho */
+    max-width: 900px;
+    padding: 20px;
+    text-align: center;
 }
 
 .experiencia.actual .titulo {
@@ -71,22 +72,25 @@ footer {
     align-items: center;
 }
 
+/* Asegurar que las experiencias ocupen casi todo el ancho */
 .experiencia {
     display: flex;
     align-items: center;
     gap: 15px;
     text-align: left;
-    width: 100%;
-    max-width: 600px; /* Limita el ancho para mejor lectura */
+    width: 90%;  /* Hace que ocupe el 90% del contenedor */
+    max-width: 900px; /* Máximo para pantallas grandes */
     background: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centra dentro de la sección */
 }
 
+/* Ajustar el tamaño de las imágenes */
 .experiencia img {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     background: white;
     padding: 5px;
@@ -99,9 +103,9 @@ footer {
     font-weight: bold;
 }
 
+/* Ajustar texto dentro de la experiencia */
 .experiencia .info {
-    display: flex;
-    flex-direction: column;
+    flex: 1; /* Ocupa todo el espacio disponible */
 }
 
 .titulo {
@@ -245,20 +249,20 @@ footer {
     max-width: 100px;
 }
 
-/* Ajuste responsivo en móviles */
+/* Asegurar que las experiencias ocupen todo en móviles */
 @media (max-width: 600px) {
     .experiencia {
         flex-direction: column;
-        align-items: center;
+        width: 100%; /* En móviles ocupa todo el ancho */
         text-align: center;
+    }
+
+    .experiencia.actual {
+        width: 100%;
     }
 
     .experiencia img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .experiencia .info {
-        text-align: center;
+        width: 70px;
+        height: 70px;
     }
 }
