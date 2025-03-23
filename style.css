@@ -59,38 +59,13 @@ footer {
     font-weight: bold;
 }
 
-/*.historico-experiencia {
+.historico-experiencia, .experiencia {
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
     text-align: center;
-}*/
-
-.historico-experiencia {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Reduce el espacio entre elementos */
-    align-items: center;
 }
-
-.experiencia {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-align: left;
-    width: 100%;
-    max-width: 400px; /* Limita el ancho para evitar que se vean gigantes */
-}
-
-
-/*.historico-experiencia {
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}*/
 
 .experiencia img {
     width: 80px;  /* Reduce el tamaño de la imagen */
