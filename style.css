@@ -60,6 +60,7 @@ footer {
     color: black;
     /*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Efecto sombra */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: auto;
 }
 
 /* Imagen del puesto actual un poco más grande */
