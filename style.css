@@ -98,6 +98,7 @@ footer {
     align-items: center; /* Alinea verticalmente */
     max-width: 900px; /* Ajuste de ancho */
     margin: 0 auto; /* Centra la sección */
+    place-self: center;
 }
 
 .imagenes-experiencia {
