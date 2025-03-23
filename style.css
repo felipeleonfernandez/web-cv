@@ -71,21 +71,24 @@ footer {
 .historico-experiencia {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Reduce el espacio entre elementos */
+    gap: 15px;
     align-items: center;
+    width: 100%;
 }
 
-/* Asegurar que las experiencias ocupen casi todo el ancho */
+/* Experiencia individual */
 .experiencia {
     display: flex;
     align-items: center;
     gap: 20px;
     text-align: left;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1100px; /* Se mantiene consistente con la sección */
     padding: 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 180px; /* Altura mínima para igualar los tamaños */
 }
 
 /* Ajustar el tamaño de las imágenes */
@@ -106,9 +109,13 @@ footer {
     width: auto;
 }
 
-/* Hacer que la información ocupe el resto del espacio disponible */
+/* Si el contenido de texto es menor, forzamos la expansión */
 .experiencia .info {
-    flex: 1; /* Se expande para llenar el espacio */
+    flex: 1;
+    min-height: 100px; /* Ajusta para mantener altura pareja */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido */
 }
 
 .titulo {
@@ -121,6 +128,7 @@ footer {
     font-size: 16px;
     line-height: 1.6;
     text-align: justify;
+    flex-grow: 1; /* Hace que el texto llene el espacio disponible */
 }
 
 .educacion {
@@ -264,6 +272,7 @@ footer {
     .experiencia {
         flex-direction: column;
         text-align: center;
+        min-height: unset; /* En móviles dejamos que el tamaño sea automático */
     }
 
     .experiencia img {
