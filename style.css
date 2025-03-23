@@ -89,11 +89,6 @@ footer {
 .experiencia img {
     width: 100px;
     height: 100px;
-    object-fit: contain;
-    background: white;
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .experiencia p {
