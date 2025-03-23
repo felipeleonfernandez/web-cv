@@ -35,11 +35,6 @@ footer {
     border-radius: 10px;
 }
 
-.contenedor {
-    display: flex;
-    gap: 20px; /* Espacio entre las secciones */
-}
-
 .experiencia {
     display: flex;
     flex-direction: column;
@@ -105,7 +100,7 @@ footer {
 }
 
 /* Contenedor principal para mostrar en paralelo */
-.contenedor-cert-tec {
+.contenedor {
     display: flex;
     gap: 20px; /* Espacio entre secciones */
     align-items: flex-start; /* Alinea los elementos en la parte superior */
