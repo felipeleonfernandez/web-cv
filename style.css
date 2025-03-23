@@ -48,7 +48,8 @@ footer {
     align-items: center;
     gap: 20px;
     text-align: left;
-    max-width: 100%;
+    max-width: 95%;
+    width: 95%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -81,7 +82,8 @@ footer {
     align-items: center;
     gap: 20px;
     text-align: left;
-    max-width: 100%;
+    max-width: 95%;
+    width: 95%;
     padding: 20px;
     background: white;
     border-radius: 10px;
