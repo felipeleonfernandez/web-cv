@@ -48,6 +48,9 @@ footer {
     text-align: center;
     padding: 15px;
     box-sizing: border-box; /* Evita que padding afecte el tamaño total */
+    background: #2563eb; /* Azul destacado */
+    color: white;
+    border-radius: 10px;
 }
 
 /* Imagen del puesto actual un poco más grande */
