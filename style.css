@@ -74,7 +74,11 @@ footer {
 }
 
 /* Contenedor principal para mostrar en paralelo */
-
+.contenedor-cert-tec {
+    display: flex;
+    gap: 20px; /* Espacio entre secciones */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
 
 .contenedor-cert-tec {
     display: flex; /* Activa Flexbox */
@@ -96,14 +100,17 @@ footer {
     text-align: center;
 }
 
+
+/* Contenedor de las imágenes */
 .imagenes-tecnologias {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
-    gap: 20px; /* Espaciado uniforme */
-    justify-content: center; /* Centra los elementos */
-    align-items: center; /* Alinea verticalmente */
-    max-width: 900px; /* Ajuste de ancho */
-    margin: 0 auto; /* Centra la sección */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Se ajusta al tamaño disponible */
+    gap: 20px; /* Espaciado entre imágenes */
+    justify-content: center; /* Centra los elementos dentro del grid */
+    align-items: center; /* Asegura alineación vertical */
+    text-align: center;
+    max-width: 900px; /* Limita el ancho */
+    width: 100%; /* Usa todo el ancho disponible */
 }
 
 .imagenes-experiencia {
