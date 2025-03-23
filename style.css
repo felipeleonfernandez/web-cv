@@ -40,6 +40,36 @@ footer {
     gap: 20px; /* Espacio entre las secciones */
 }
 
+.experiencias {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carrusel-experiencias {
+    display: grid;
+    grid-auto-flow: column; /* Coloca las experiencias en una sola fila */
+    grid-auto-columns: 300px; /* Tamaño fijo de cada tarjeta */
+    gap: 20px;
+    overflow-x: auto; /* Scroll horizontal */
+    scroll-snap-type: x mandatory; /* Hace que el scroll "encaje" en cada tarjeta */
+    padding: 20px;
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+    -ms-overflow-style: none; /* Oculta en Edge */
+}
+
+.carrusel-experiencias::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en Chrome y Safari */
+}
+
+.experiencia {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    scroll-snap-align: center; /* Hace que cada tarjeta se encaje en el centro */
+}
 
 .educacion {
     flex: 1; /* Ambas ocupan el mismo espacio */
