@@ -48,33 +48,40 @@ footer {
 
 .carrusel-experiencias {
     display: grid;
-    grid-auto-flow: column; /* Coloca las experiencias en una sola fila */
-    grid-auto-columns: 300px; /* Tamaño fijo de cada tarjeta */
+    grid-auto-flow: column; /* Alinea los elementos en fila */
+    grid-auto-columns: 250px; /* Ajuste de ancho similar a las otras secciones */
     gap: 20px;
     overflow-x: auto; /* Scroll horizontal */
-    scroll-snap-type: x mandatory; /* Hace que el scroll "encaje" en cada tarjeta */
+    scroll-snap-type: x mandatory; /* Se ajusta automáticamente al desplazarse */
     padding: 20px;
-    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
-    -ms-overflow-style: none; /* Oculta en Edge */
+    scrollbar-width: none; /* Oculta barra de desplazamiento en Firefox */
+    -ms-overflow-style: none; /* Oculta barra en Edge */
 }
 
 .carrusel-experiencias::-webkit-scrollbar {
-    display: none; /* Oculta la barra de desplazamiento en Chrome y Safari */
+    display: none; /* Oculta barra en Chrome y Safari */
 }
 
 .experiencia {
-    background: #f8f9fa;
+    background: white;
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    scroll-snap-align: center; /* Hace que cada tarjeta se encaje en el centro */
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    scroll-snap-align: center; /* Se centra en el carrusel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    transition: transform 0.3s ease-in-out;
 }
+
+/* Efecto al pasar el mouse */
+.experiencia:hover {
+    transform: scale(1.05);
+}
+
 
 .educacion {
     flex: 1; /* Ambas ocupan el mismo espacio */
