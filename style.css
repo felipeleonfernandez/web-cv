@@ -121,20 +121,6 @@ footer {
     height: 1px; /* Evita que ocupe espacio visible */
 }
 
-.grid-tecnologias {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Distribuye en columnas */
-    gap: 20px; /* Espaciado entre imágenes */
-    width: 100%;
-    max-width: 900px; /* Ajuste del ancho máximo */
-}
-
-/* Solución: Pseudo-elemento para forzar la alineación en la última fila */
-.grid-tecnologias::after {
-    content: "";
-    width: 120px; /* Tamaño igual al minmax de grid-template-columns */
-}
-
 .imagenes-experiencia {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Distribuye en columnas */
