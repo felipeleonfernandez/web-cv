@@ -43,7 +43,7 @@ footer {
 
 /* Destacar el puesto actual */
 .experiencia.actual {
-    background: #c8dcf7;
+    background: #c5cdd6;
     display: flex;
     align-items: center;
     gap: 20px;
