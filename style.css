@@ -69,6 +69,11 @@ footer {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     scroll-snap-align: center; /* Hace que cada tarjeta se encaje en el centro */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .educacion {
