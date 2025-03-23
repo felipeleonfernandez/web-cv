@@ -45,8 +45,8 @@ footer {
 .experiencia.actual {
     background: #2563eb;
     color: white;
-    width: 90%;  /* Ocupa casi todo el ancho */
-    max-width: 900px;
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 100%;
     padding: 20px;
 }
 
@@ -75,21 +75,20 @@ footer {
 .experiencia {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     text-align: left;
-    width: 90%;  /* Hace que ocupe el 90% del contenedor */
-    max-width: 900px; /* Máximo para pantallas grandes */
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
     background: white;
-    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Centra dentro de la sección */
 }
 
 /* Ajustar el tamaño de las imágenes */
 .experiencia img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     background: white;
     padding: 5px;
@@ -103,9 +102,9 @@ footer {
     width: auto;
 }
 
-/* Ajustar texto dentro de la experiencia */
+/* Hacer que la información ocupe el resto del espacio disponible */
 .experiencia .info {
-    flex: 1; /* Ocupa todo el espacio disponible */
+    flex: 1; /* Se expande para llenar el espacio */
 }
 
 .titulo {
@@ -113,9 +112,11 @@ footer {
     font-weight: bold;
 }
 
+/* Asegurar que las descripciones se vean más extendidas */
 .descripcion {
-    font-size: 14px;
-    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 .educacion {
@@ -149,8 +150,14 @@ footer {
     font-size: 20px;
 }
 
+.experiencias {
+    width: 100%;
+    max-width: 1100px; /* Se expande más en pantallas grandes */
+    margin: 0 auto;
+}
+
 /* Ajusta el tamaño de las secciones */
-.certificaciones, .tecnologias, .perfil, .contacto, .experiencias {
+.certificaciones, .tecnologias, .perfil, .contacto {
     flex: 1; /* Ambas ocupan el mismo espacio */
     background: white;
     padding: 20px;
@@ -249,20 +256,19 @@ footer {
     max-width: 100px;
 }
 
-/* Asegurar que las experiencias ocupen todo en móviles */
-@media (max-width: 600px) {
+/* Ajuste responsivo en móviles */
+@media (max-width: 768px) {
     .experiencia {
         flex-direction: column;
-        width: 100%; /* En móviles ocupa todo el ancho */
         text-align: center;
     }
 
-    .experiencia.actual {
-        width: 100%;
+    .experiencia img {
+        width: 80px;
+        height: 80px;
     }
 
-    .experiencia img {
-        width: 70px;
-        height: 70px;
+    .descripcion {
+        text-align: left;
     }
 }
