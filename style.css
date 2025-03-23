@@ -75,9 +75,9 @@ footer {
 }
 
 .break-line {
-    width: 75%; /* Ajusta el porcentaje aquí */
+    width: 65%; /* Ajusta el porcentaje aquí */
     border: 0.3px solid #000; /* Define el grosor y color */
-    margin: 20px auto; /* Centrar el <hr> horizontalmente */
+    margin: 30px auto; /* Centrar el <hr> horizontalmente */
 }
 
 .historico-experiencia {
