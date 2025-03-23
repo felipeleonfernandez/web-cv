@@ -120,7 +120,6 @@ footer {
     grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
     gap: 20px;
     justify-content: center; /* Centra los elementos */
-    max-width: 900px; /* Ajuste de ancho */
     margin: 0 auto; /* Centra la sección */
     display: flex;
     flex-wrap: wrap;
@@ -152,7 +151,7 @@ footer {
 }
 
 /* Contenedor de cada tecnología */
-.tecnologia {
+.tecnologia, .certificacion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,7 +159,7 @@ footer {
 }
 
 /* Ajuste de las imágenes */
-.tecnologia img {
+.tecnologia img, .certificacion img {
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -172,12 +171,12 @@ footer {
 }
 
 /* Efecto hover */
-.tecnologia img:hover {
+.tecnologia img:hover, .certificacion img:hover {
     transform: scale(1.1);
 }
 
 /* Estilo del texto debajo de la imagen */
-.tecnologia p {
+.tecnologia p, .certificacion p {
     margin-top: 8px;
     font-size: 14px;
     font-weight: bold;
