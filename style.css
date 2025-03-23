@@ -66,6 +66,12 @@ footer {
 .experiencia.actual img {
     width: 90px;
     height: 90px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.experiencia.actual img:hover {
+    transform: scale(1.1);
 }
 
 .historico-experiencia {
@@ -98,6 +104,11 @@ footer {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.experiencia img:hover {
+    transform: scale(1.1);
 }
 
 .experiencia p {
