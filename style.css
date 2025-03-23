@@ -148,20 +148,7 @@ footer {
     justify-content: center;
 }
 
-/* Si el número de tecnologías varía, usa auto-fit */
-@media (max-width: 768px) {
-    .imagenes-tecnologias {
-        grid-template-columns: repeat(2, 1fr); /* En pantallas pequeñas, 2 columnas */
-    }
-}
-
-@media (max-width: 500px) {
-    .imagenes-tecnologias {
-        grid-template-columns: repeat(1, 1fr); /* En móviles, 1 columna */
-    }
-}
-
-/* Contenedor de cada tecnología */
+/* Contenedor de cada tecnología y certificación */
 .tecnologia, .certificacion {
     display: flex;
     flex-direction: column;
