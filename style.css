@@ -75,6 +75,12 @@ footer {
     height: 90px;
 }
 
+.break-line {
+    width: 50%; /* Ajusta el porcentaje aquí */
+    border: 1px solid #000; /* Define el grosor y color */
+    margin: 20px auto; /* Centrar el <hr> horizontalmente 
+}
+
 .historico-experiencia {
     display: flex;
     flex-direction: column;
