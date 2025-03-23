@@ -71,7 +71,7 @@ footer {
 .historico-experiencia {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Reduce el espacio entre elementos */
+    gap: 20px; /* Reduce el espacio entre elementos */
     align-items: center;
 }
 
