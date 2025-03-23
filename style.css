@@ -96,7 +96,9 @@ footer {
     justify-content: center; /* Centra los elementos */
     max-width: 900px; /* Ajuste de ancho */
     margin: 0 auto; /* Centra la sección */
-    place-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .imagenes-experiencia {
