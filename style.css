@@ -166,8 +166,6 @@ footer {
     font-size: 20px;
 }
 
-
-
 /* Ajusta el tamaño de las secciones */
 .certificaciones, .tecnologias, .perfil, .contacto, .experiencias {
     flex: 1; /* Ambas ocupan el mismo espacio */
