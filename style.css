@@ -69,7 +69,7 @@ footer {
 
 .break-line {
     width: 65%; /* Ajusta el porcentaje aquí */
-    border: 0.3px solid #000; /* Define el grosor y color */
+    border: 0.2px solid #000; /* Define el grosor y color */
     margin: 30px auto; /* Centrar el <hr> horizontalmente */
 }
 
