@@ -80,16 +80,6 @@ footer {
     align-items: flex-start; /* Alinea los elementos en la parte superior */
 }
 
-.contenedor-cert-tec {
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    text-align: center; /* Asegura que el texto también esté centrado */
-    flex-direction: column; /* Apila los elementos si es necesario */
-    width: 100%; /* Usa todo el ancho disponible */
-}
-
-
 /* Ajusta el tamaño de las secciones */
 .certificaciones, .tecnologias, .perfil, .contacto, .experiencia {
     flex: 1; /* Ambas ocupan el mismo espacio */
@@ -100,36 +90,25 @@ footer {
     text-align: center;
 }
 
-
-/* Contenedor de las imágenes */
 .imagenes-tecnologias {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Crea un grid flexible */
-    gap: 20px; /* Espaciado entre imágenes */
-    justify-content: center; /* Asegura que los elementos se centren en la última fila */
-    align-items: center;
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto; /* Centra todo el grid */
-}
-
-/* Forzar la última fila a centrarse si no se llena completamente */
-.imagenes-tecnologias::after {
-    content: "";
-    display: block;
-    width: 120px; /* Mismo ancho que las columnas del grid */
-    height: 1px; /* Evita que ocupe espacio visible */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+    gap: 20px; /* Espaciado uniforme */
+    justify-content: center; /* Centra los elementos */
+    align-items: center; /* Alinea verticalmente */
+    max-width: 900px; /* Ajuste de ancho */
+    margin: 0 auto; /* Centra la sección */
 }
 
 .imagenes-experiencia {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Distribuye en columnas */
-    gap: 20px; /* Espaciado entre imágenes */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    text-align: center;
-    max-width: 900px; /* Ajusta el ancho del grid */
-    margin: 0 auto; /* Centra el contenedor */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* grid-gap: 2px; /* Espacio entre los elementos */
+    /* gap: 20px; /* Espaciado uniforme */
+    justify-content: center; /* Centra los elementos */
+    align-items: center; /* Alinea verticalmente */
+    /*max-width: 1200px; /* Ajuste de ancho */
+    margin: 0 auto; /* Centra la sección */
 }
 
 /* Si el número de tecnologías varía, usa auto-fit */
@@ -150,10 +129,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Asegura que los elementos estén centrados */
     text-align: center;
 }
-
 
 /* Ajuste de las imágenes */
 .tecnologia img {
