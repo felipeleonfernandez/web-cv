@@ -55,8 +55,12 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.experiencia.actual .titulo {
+.experiencia.actual {
     font-weight: bold;
+}
+
+.experiencia.actual.titulo {
+    color: white;
 }
 
 .experiencia.actual .descripcion {
