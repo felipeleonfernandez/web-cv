@@ -216,7 +216,7 @@ footer {
 
 .imagenes-educacion {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+    grid-template-columns: repeat(2, 1fr); /* 4 columnas fijas */
     gap: 20px;
     justify-content: center; /* Centra los elementos */
     margin: 0 auto; /* Centra la sección */
