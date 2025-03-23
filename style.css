@@ -44,12 +44,16 @@ footer {
 /* Destacar el puesto actual */
 .experiencia.actual {
     background: #2563eb;
-    color: white;
-    width: 100%; /* Ocupa todo el ancho */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
     max-width: 100%;
     padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .experiencia.actual .titulo {
     font-weight: bold;
