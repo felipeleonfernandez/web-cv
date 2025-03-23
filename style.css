@@ -102,11 +102,23 @@ footer {
 
 
 /* Contenedor de las imágenes */
-
-
 .imagenes-tecnologias {
-    display: flex;
-    justify-content: center; /* Centra el grid en su contenedor */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Crea un grid flexible */
+    gap: 20px; /* Espaciado entre imágenes */
+    justify-content: center; /* Asegura que los elementos se centren en la última fila */
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto; /* Centra todo el grid */
+}
+
+/* Forzar la última fila a centrarse si no se llena completamente */
+.imagenes-tecnologias::after {
+    content: "";
+    display: block;
+    width: 120px; /* Mismo ancho que las columnas del grid */
+    height: 1px; /* Evita que ocupe espacio visible */
 }
 
 .grid-tecnologias {
