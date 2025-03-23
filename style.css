@@ -159,7 +159,18 @@ footer {
 }
 
 /* Ajuste de las imágenes */
-.tecnologia img, .certificacion img {
+.tecnologia img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.certificacion img {
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -171,12 +182,23 @@ footer {
 }
 
 /* Efecto hover */
-.tecnologia img:hover, .certificacion img:hover {
+.tecnologia img:hover {
+    transform: scale(1.1);
+}
+
+.certificacion img:hover {
     transform: scale(1.1);
 }
 
 /* Estilo del texto debajo de la imagen */
-.tecnologia p, .certificacion p {
+.tecnologia p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.certificacion p {
     margin-top: 8px;
     font-size: 14px;
     font-weight: bold;
