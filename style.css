@@ -74,11 +74,17 @@ footer {
 }
 
 /* Contenedor principal para mostrar en paralelo */
+
+
 .contenedor-cert-tec {
-    display: flex;
-    gap: 20px; /* Espacio entre secciones */
-    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Asegura que el texto también esté centrado */
+    flex-direction: column; /* Apila los elementos si es necesario */
+    width: 100%; /* Usa todo el ancho disponible */
 }
+
 
 /* Ajusta el tamaño de las secciones */
 .certificaciones, .tecnologias, .perfil, .contacto, .experiencia {
