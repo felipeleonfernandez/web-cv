@@ -77,6 +77,14 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
+.experiencia img {
+    max-width: 80px; /* Limita el ancho máximo */
+    max-height: 80px; /* Limita la altura máxima */
+    object-fit: contain; /* Mantiene la proporción sin recortar */
+    margin-bottom: 10px; /* Espacio entre imagen y texto */
+}
+
+
 /* Efecto al pasar el mouse */
 .experiencia:hover {
     transform: scale(1.05);
