@@ -84,13 +84,13 @@ footer {
 }
 
 
-.historico-experiencia {
+/*.historico-experiencia {
     background: white;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
-}
+}*/
 
 .experiencia img {
     width: 80px;  /* Reduce el tamaño de la imagen */
