@@ -40,56 +40,37 @@ footer {
     gap: 20px; /* Espacio entre las secciones */
 }
 
-.experiencias {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.carrusel-experiencias {
-    display: grid;
-    grid-auto-flow: column; /* Alinea los elementos en fila */
-    grid-auto-columns: 250px; /* Ajuste de ancho similar a las otras secciones */
-    gap: 20px;
-    overflow-x: auto; /* Scroll horizontal */
-    scroll-snap-type: x mandatory; /* Se ajusta automáticamente al desplazarse */
-    padding: 20px;
-    scrollbar-width: none; /* Oculta barra de desplazamiento en Firefox */
-    -ms-overflow-style: none; /* Oculta barra en Edge */
-}
-
-.carrusel-experiencias::-webkit-scrollbar {
-    display: none; /* Oculta barra en Chrome y Safari */
-}
-
 .experiencia {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    scroll-snap-align: center; /* Se centra en el carrusel */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 150px;
+    text-align: center;
+}
+
+/* Ajuste de las imágenes */
+.experiencia img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
-.experiencia img {
-    max-width: 80px; /* Limita el ancho máximo */
-    max-height: 80px; /* Limita la altura máxima */
-    object-fit: contain; /* Mantiene la proporción sin recortar */
-    margin-bottom: 10px; /* Espacio entre imagen y texto */
+/* Efecto hover */
+.experiencia img:hover {
+    transform: scale(1.1);
 }
 
-
-/* Efecto al pasar el mouse */
-.experiencia:hover {
-    transform: scale(1.05);
+/* Estilo del texto debajo de la imagen */
+.experiencia p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
 }
-
 
 .educacion {
     flex: 1; /* Ambas ocupan el mismo espacio */
@@ -131,7 +112,7 @@ footer {
 }
 
 /* Ajusta el tamaño de las secciones */
-.certificaciones, .tecnologias, .perfil, .contacto {
+.certificaciones, .tecnologias, .perfil, .contacto, .experiencias {
     flex: 1; /* Ambas ocupan el mismo espacio */
     background: white;
     padding: 20px;
