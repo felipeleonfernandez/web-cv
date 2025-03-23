@@ -41,46 +41,25 @@ footer {
     align-items: flex-start; /* Alinea los elementos en la parte superior */
 }
 
-/* Asegura que el div no desborde en móviles */
 .experiencia.actual {
-    max-width: 100%;  /* Se adapta al ancho del contenedor */
-    width: 90%;       /* Evita que ocupe el 100% y genere desbordes */
-    text-align: center;
-    padding: 15px;
-    box-sizing: border-box; /* Evita que padding afecte el tamaño total */
-    background: #2563eb; /* Azul destacado */
+    background: #2563eb;
     color: white;
+    padding: 15px;
     border-radius: 10px;
+}
+
+.experiencia.actual .titulo {
+    font-weight: bold;
+}
+
+.experiencia.actual .descripcion {
+    color: #f0f0f0; /* Texto más claro en el fondo azul */
 }
 
 /* Imagen del puesto actual un poco más grande */
 .experiencia.actual img {
     width: 90px;
     height: 90px;
-}
-
-/* Ajuste responsivo en pantallas pequeñas */
-@media (max-width: 600px) {
-    .experiencia.actual {
-        width: 100%; /* En móvil ocupa todo el ancho disponible */
-        padding: 10px;
-    }
-
-    .historico-experiencia {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .experiencia {
-        flex-direction: column; /* En móviles, texto e imagen en columna */
-        text-align: center;
-    }
-
-    .experiencia img {
-        width: 60px; /* Ajuste para pantallas muy pequeñas */
-        height: 60px;
-    }
 }
 
 .historico-experiencia {
@@ -96,11 +75,15 @@ footer {
     gap: 15px;
     text-align: left;
     width: 100%;
-    max-width: 400px; /* Limita el ancho para evitar que se vean gigantes */
+    max-width: 600px; /* Limita el ancho para mejor lectura */
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .experiencia img {
-    width: 70px; /* Reducimos aún más en móvil */
+    width: 70px;
     height: 70px;
     object-fit: contain;
     background: white;
@@ -112,6 +95,21 @@ footer {
 .experiencia p {
     font-size: 16px;
     font-weight: bold;
+}
+
+.experiencia .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.descripcion {
+    font-size: 14px;
+    color: #555;
 }
 
 .educacion {
@@ -243,4 +241,22 @@ footer {
     font-weight: bold;
     color: #333;
     max-width: 100px;
+}
+
+/* Ajuste responsivo en móviles */
+@media (max-width: 600px) {
+    .experiencia {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experiencia img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .experiencia .info {
+        text-align: center;
+    }
 }
