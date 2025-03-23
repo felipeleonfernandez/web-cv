@@ -35,6 +35,12 @@ footer {
     border-radius: 10px;
 }
 
+.contenedor {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
 .experiencia {
     display: flex;
     flex-direction: column;
@@ -97,13 +103,6 @@ footer {
 .contacto i {
     color: #0073e6; /* Color azul para los iconos */
     font-size: 20px;
-}
-
-/* Contenedor principal para mostrar en paralelo */
-.contenedor {
-    display: flex;
-    gap: 20px; /* Espacio entre secciones */
-    align-items: flex-start; /* Alinea los elementos en la parte superior */
 }
 
 /* Ajusta el tamaño de las secciones */
