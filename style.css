@@ -93,6 +93,7 @@ footer {
 .imagenes-tecnologias {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+    gap: 20px;
     justify-content: center; /* Centra los elementos */
     max-width: 900px; /* Ajuste de ancho */
     margin: 0 auto; /* Centra la sección */
