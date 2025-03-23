@@ -60,10 +60,6 @@ footer {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Efecto sombra */
 }
 
-.experiencia.actual .descripcion {
-    color: #f0f0f0; /* Texto más claro en el fondo azul */
-}
-
 /* Imagen del puesto actual un poco más grande */
 .experiencia.actual img {
     width: 90px;
