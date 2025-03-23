@@ -214,8 +214,19 @@ footer {
     justify-content: center;
 }
 
+.imagenes-educacion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+    gap: 20px;
+    justify-content: center; /* Centra los elementos */
+    margin: 0 auto; /* Centra la sección */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* Contenedor de cada tecnología y certificación */
-.tecnologia, .certificacion {
+.tecnologia, .certificacion, .educacion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,12 +256,27 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
+.educacion img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
 /* Efecto hover */
 .tecnologia img:hover {
     transform: scale(1.1);
 }
 
 .certificacion img:hover {
+    transform: scale(1.1);
+}
+
+.educacion img:hover {
     transform: scale(1.1);
 }
 
@@ -271,6 +297,14 @@ footer {
     max-width: 100px;
 }
 
+.educacion p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    max-width: 100px;
+}
+
 /* Ajuste responsivo en móviles */
 @media (max-width: 768px) {
     .experiencia {
@@ -279,6 +313,16 @@ footer {
     }
 
     .experiencia img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .educacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .educacion img {
         width: 80px;
         height: 80px;
     }
