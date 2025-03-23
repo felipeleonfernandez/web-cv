@@ -85,8 +85,10 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-
+.experiencia p {
+    font-size: 16px;
+    font-weight: bold;
+}
 
 .educacion {
     flex: 1; /* Ambas ocupan el mismo espacio */
