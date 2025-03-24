@@ -314,7 +314,7 @@ footer {
 
     .experiencia.actual {
         flex-direction: column;
-        text-align: left;
+        text-align: center;
     }
 
     .educacion {
