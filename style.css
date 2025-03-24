@@ -7,7 +7,8 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #07112c, #5289ff);
+    /*background: linear-gradient(135deg, #07112c, #5289ff);*/
+    background: url('images/old-paper-background.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 30px;
