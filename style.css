@@ -312,6 +312,11 @@ footer {
         height: 80px;
     }
 
+    .experiencia.actual {
+        flex-direction: column;
+        text-align: left;
+    }
+
     .educacion {
         flex-direction: column;
         text-align: center;
